@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?&family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6efe8;
+}
+
+h2 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+small {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.fa-heart {
+    color: rgb(229, 17, 17);
+}
+
+.Liked_Image {
+    height: 500px;
+    width: 380px;
+    background: url('https://images.unsplash.com/photo-1618336753974-aae8e04506aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-size: cover;
+    max-width: 100%;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+
+.Liked_Image .fa-heart {
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
